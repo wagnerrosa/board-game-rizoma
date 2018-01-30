@@ -53,7 +53,7 @@ section
     width: 820px
     height: 700px
     //margin: 80px auto 40px auto
-    background-image: url(/img/map1-curves.svg)
+    background-image: url(http://wagnerrosa.com/board-game-rizoma/img/map1-curves.svg)
     //background-image: url(/img/map1-curves.svg)
     background-position: center
     background-repeat: no-repeat
@@ -70,23 +70,24 @@ footer
 
 
 #modulo-1, #modulo-2, #modulo-3, #modulo-4, #modulo-5
-  height: 20%
-  font-size: 18px
-  color: white
-  transition: 300ms
-  display: block
-  //margin: 30px 10px 30px 50px
-  &:hover
-    text-decoration: none
-    .bola
-      transform: scale(1.2)
-      text-decoration: none
-    .tags
-      opacity: 1
-      text-decoration: none
   @media screen and (min-width: 800px) // desktop
     width: 100%
     position: absolute
+    height: 20%
+    font-size: 18px
+    color: white
+    transition: 300ms
+    display: block
+    //margin: 30px 10px 30px 50px
+    &:hover
+      text-decoration: none
+      .bola
+        transform: scale(1.2)
+        text-decoration: none
+      .tags
+        opacity: 1
+        text-decoration: none
+
 
 #modulo-1
   @media screen and (min-width: 800px) // desktop
@@ -133,32 +134,34 @@ footer
     left: -30px
 
 .tags
-  position: absolute
-  background-color: $azul-vetor
-  color: white
-  height: 65px
-  text-align: center
-  border-radius: 5px
-  //padding: 20px
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
-  opacity: 0 //MUDAR PARA O TRANSITION
-  transition: 300ms
-  transition-delay: 100ms
-  z-index: 5
+  @media screen and (min-width: 800px) // desktop
+    position: absolute
+    background-color: $azul-vetor
+    color: white
+    height: 65px
+    text-align: center
+    border-radius: 5px
+    //padding: 20px
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
+    opacity: 0 //MUDAR PARA O TRANSITION
+    transition: 300ms
+    transition-delay: 100ms
+    z-index: 5
 
 .bola
-  position: absolute
-  float: left
-  background-color: $azul-vetor
-  text-align: center
-  border-radius: 50px
-  width: 65px
-  height: 65px
-  line-height: 61px
-  box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
-  z-index: 100
-  border: 4px solid $azul-vetor
-  transition: 300ms
+  @media screen and (min-width: 800px) // desktop
+    position: absolute
+    float: left
+    background-color: $azul-vetor
+    text-align: center
+    border-radius: 50px
+    width: 65px
+    height: 65px
+    line-height: 61px
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
+    z-index: 100
+    border: 4px solid $azul-vetor
+    transition: 300ms
 
 .tag-1
   top: 72px
