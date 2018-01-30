@@ -8,16 +8,25 @@ $azul: #0094BB
 $preto: #34342B
 $cinzinha: #EEEEEE
 $cinza: #F5F5F5
+$azul-vetor: #7fc7df
+
+//rs
+$verde: #00A23B
+$vermelho: #FF231B
+$amarelo: #FDFD00
+
 
 body
   background-color: $cinza
 header
-  background: $azul-escuro
-  padding: 60px 0 20px
+  padding: 60px 0 40px
+  background: linear-gradient(to right, #008fc2, #009ea6)
+
+
 .logotype
   max-width: 235px
   height: auto
-  margin: 60px auto
+  margin: 0 auto
   display: block
 
 section
@@ -61,16 +70,13 @@ footer
 
 
 #modulo-1, #modulo-2, #modulo-3, #modulo-4, #modulo-5
-  //width: 100%
   height: 20%
-  //position: absolute
   font-size: 18px
   color: white
   transition: 300ms
   display: block
-  margin: 30px 10px 30px 50px
+  //margin: 30px 10px 30px 50px
   &:hover
-    color: red
     text-decoration: none
     .bola
       transform: scale(1.2)
@@ -79,22 +85,28 @@ footer
       opacity: 1
       text-decoration: none
   @media screen and (min-width: 800px) // desktop
-    //position: absolute
+    width: 100%
+    position: absolute
 
 #modulo-1
-  //top: 0%
+  @media screen and (min-width: 800px) // desktop
+    top: 0%
 
 #modulo-2
-  //top: 20%
+  @media screen and (min-width: 800px) // desktop
+    top: 20%
 
 #modulo-3
-  //top: 40%
+  @media screen and (min-width: 800px) // desktop
+    top: 40%
 
 #modulo-4
-  //top: 60%
+  @media screen and (min-width: 800px) // desktop
+    top: 60%
 
 #modulo-5
-  //top: 80%
+  @media screen and (min-width: 800px) // desktop
+    top: 80%
 
 .arrow-down
   &::after
@@ -122,12 +134,12 @@ footer
 
 .tags
   position: absolute
-  background-color: $preto
+  background-color: $azul-vetor
   color: white
   height: 65px
   text-align: center
   border-radius: 5px
-  padding: 20px
+  //padding: 20px
   box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
   opacity: 0 //MUDAR PARA O TRANSITION
   transition: 300ms
@@ -137,7 +149,7 @@ footer
 .bola
   position: absolute
   float: left
-  background-color: $preto
+  background-color: $azul-vetor
   text-align: center
   border-radius: 50px
   width: 65px
@@ -145,48 +157,54 @@ footer
   line-height: 61px
   box-shadow: 0px 3px 8px rgba(0,0,0,0.2)
   z-index: 100
-  border: 4px solid $preto
+  border: 4px solid $azul-vetor
   transition: 300ms
 
 .tag-1
-  //top: 53px
-  //right: 191px
+  top: 72px
+  left: 224px
+  padding: 20px 20px 20px 40px
 
 .bola-1
-  //top: 53px
-  //right: 341px
+  top: 72px
+  left: 184px
 
 .tag-2
-  top: 46px
-  right: 191px
+  top: 25px
+  right: 145px
+  padding: 20px 20px 20px 40px
+
 
 .bola-2
-  top: 46px
-  right: 178px
+  top: 25px
+  right: 248px
 
 .tag-3
-  top: 35px
-  right: 391px
+  top: 71px
+  right: 143px
+  padding: 20px 40px 20px 20px
 
 .bola-3
-  top: 35px
-  right: 560px
+  top: 71px
+  right: 105px
 
 .tag-4
-  top: 24px
-  right: 208px
+  top: 8px
+  right: 400px
+  padding: 20px 40px 20px 20px
 
 .bola-4
-  top: 24px
-  right: 163px
+  top: 8px
+  right: 361px
 
 .tag-5
-  top: 35px
-  right: 391px
+  top: 25px
+  left: 190px
+  padding: 20px 20px 20px 40px
 
 .bola-5
-  top: 35px
-  right: 560px
+  top: 25px
+  left: 153px
 
 
 // MEDIA SIZES
