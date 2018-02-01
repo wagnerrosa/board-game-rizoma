@@ -263,7 +263,10 @@ footer
   position: absolute
   left: 0
   bottom: 0
-  animation: bg 75s infinite ease-in-out
+  -webkit-animation: bg 75s infinite ease-in-out /* Safari 4+ */
+  -moz-animation:    bg 75s infinite ease-in-out /* Fx 5+ */
+  -o-animation:      bg 75s infinite ease-in-out /* Opera 12+ */
+  animation:         bg 75s infinite ease-in-out /* IE 10+, Fx 29+ */
 
 @keyframes bg
   50%
