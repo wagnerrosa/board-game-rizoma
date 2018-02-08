@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato|Oswald:300,400,700");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -5848,11 +5848,38 @@ header {
   background: linear-gradient(to right, #008fc2, #009ea6);
 }
 
+.icons {
+  text-align: right;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.icons .icon img {
+  max-width: 60px;
+  height: auto;
+  transition: 300ms;
+}
+
+.icons .icon img:hover {
+  transform: scale(1.2);
+}
+
 .logotype {
   max-width: 285px;
   height: auto;
   margin: 0 auto;
   display: block;
+  margin-top: -50px;
+}
+
+#descricao {
+  font-family: "Lato", sans-serif;
+  max-width: 820px;
+  padding: 0 10px;
+  margin: 50px auto 0;
+  line-height: 1.6;
+  color: #EEEEEE;
 }
 
 section {
@@ -5917,17 +5944,22 @@ section {
 }
 
 footer {
-  margin: 0 auto;
+  margin: 0 auto 40px;
   text-align: center;
 }
 
 footer img {
+  margin: 0 32px;
   max-width: 150px;
   height: auto;
 }
 
+footer img:first-child {
+  max-width: 102px;
+}
+
 footer img:last-child {
-  max-width: 200px;
+  max-width: 227px;
 }
 
 #modulo-1, #modulo-2, #modulo-3, #modulo-4, #modulo-5 {

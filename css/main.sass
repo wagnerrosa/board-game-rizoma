@@ -1,7 +1,9 @@
 // Main CSS
 
 @import 'bootstrap'
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700')
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:300,400,700')
+
+$lato: 'Lato', sans-serif
 
 $azul-escuro: #2F3A4A
 $azul: #0094BB
@@ -23,12 +25,35 @@ header
   padding: 60px 0 40px
   background: linear-gradient(to right, #008fc2, #009ea6)
 
+.icons
+  text-align: right
+  max-width: 820px
+  margin: 0 auto
+  padding: 0 10px
+  .icon
+    img
+      max-width: 60px
+      height: auto
+      transition: 300ms
+      &:hover
+        transform: scale(1.2)
+
+
 
 .logotype
   max-width: 285px
   height: auto
   margin: 0 auto
   display: block
+  margin-top: -50px
+
+#descricao
+  font-family: $lato
+  max-width: 820px
+  padding: 0 10px
+  margin: 50px auto 0
+  line-height: 1.6
+  color: $cinzinha
 
 section
   font-family: 'Oswald', sans-serif
@@ -79,15 +104,20 @@ section
   z-index: 10
 
 footer
-  margin: 0 auto
+  margin: 0 auto 40px
   text-align: center
   img
-    //margin: 40px auto
-    //display: inline-block
+    margin: 0 32px
     max-width: 150px
     height: auto
+    &:first-child
+      max-width: 102px
     &:last-child
-      max-width: 200px
+      max-width: 227px
+
+      //@media screen and (max-width: 567px) // s-mobile
+        margin-top: 10px
+
 
 
 
