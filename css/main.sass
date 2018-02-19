@@ -112,17 +112,25 @@ section
 footer
   margin: 0 auto 40px
   text-align: center
+  @media screen and (max-width: 799px) // mobile
+    margin-top: 40px
   img
     margin: 0 32px
     max-width: 150px
     height: auto
+    @media screen and (max-width: 401px) // mobile
+      margin-top: 10px
     &:first-child
       max-width: 102px
     &:last-child
       max-width: 227px
-
-      //@media screen and (max-width: 567px) // s-mobile
+      @media screen and (max-width: 696px) // mobile
+        margin-top: 50px
+      @media screen and (max-width: 401px) // mobile
         margin-top: 10px
+
+
+
 
 
 

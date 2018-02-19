@@ -5953,10 +5953,22 @@ footer {
   text-align: center;
 }
 
+@media screen and (max-width: 799px) {
+  footer {
+    margin-top: 40px;
+  }
+}
+
 footer img {
   margin: 0 32px;
   max-width: 150px;
   height: auto;
+}
+
+@media screen and (max-width: 401px) {
+  footer img {
+    margin-top: 10px;
+  }
 }
 
 footer img:first-child {
@@ -5965,6 +5977,18 @@ footer img:first-child {
 
 footer img:last-child {
   max-width: 227px;
+}
+
+@media screen and (max-width: 696px) {
+  footer img:last-child {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  footer img:last-child {
+    margin-top: 10px;
+  }
 }
 
 #modulo-1, #modulo-2, #modulo-3, #modulo-4, #modulo-5 {
